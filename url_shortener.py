@@ -21,7 +21,7 @@ def index():
 
         shortened_urls[short_url] = long_url
         return f"Shortened URL:  {request.url_root}{short_url}"
-    return render_template("index.html")
+    return render_template("url_shortener.html")
 
 @app.route("/<short_url>")
 def shortened_url(short_url):
